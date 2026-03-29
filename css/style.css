@@ -6,14 +6,14 @@
   --white: #ffffff;
   --offwhite: #f7f9fc;
   --light: #eef2f8;
-  --coral: #ff6b5b;
+  --coral: #ff5a4a;
   --coral-dark: #e84f42;
-  --coral-dark: #ff6b5b;
-  --teal: #1db8a4;
+  --coral-dark: #ff5a4a;
+  --teal: #0d9e94;
   --teal-dark: #159885;
   --blue: #4a7ffc;
   --text: #1a1a2e;
-  --text-light: #5c6188;
+  --text-light: #4a4e6a;
   --border: #e4e8f0;
   --font: 'Poppins', sans-serif;
   --font-mono: 'Space Mono', monospace;
@@ -656,4 +656,23 @@ img { display: block; max-width: 100%; }
   .footer__grid { grid-template-columns: 1fr; }
   .hours-card { padding: 2.5rem 1.5rem; }
   .hero__btns { flex-direction: column; }
+}
+
+/* Ensure high contrast on light backgrounds */
+.section--light h2,
+.section--light h3,
+.section--light .section__title {
+  color: #1a1a2e !important;
+}
+
+.section--light .section__desc {
+  color: #3d3d5c !important;
+}
+
+.section .section__title {
+  color: #1a1a2e !important;
+}
+
+.section .section__desc {
+  color: #4a4e6a !important;
 }
