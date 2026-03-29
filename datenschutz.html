@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz — Immo-Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo"><img src="img/logo.jpg" alt="Immo-Consulting"></a>
+  <ul class="nav__links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="leistungen.html">Leistungen</a></li>
+    <li><a href="ueber-uns.html">Über uns</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__backdrop" id="navBackdrop"></div>
+
+<header class="page-header">
+  <div class="container">
+    <div class="section__tag">Rechtliches</div>
+    <h1>Datenschutzerklärung</h1>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width: 720px;">
+
+    <h2 style="margin-bottom:1rem;">Allgemeine Hinweise</h2>
+    <p style="margin-bottom:2rem; line-height:1.9; font-weight:300;">
+      Wir, Brugger & Brugger ImmoConsulting GmbH, betreiben diese Website und verarbeiten Ihre Daten ausschließlich im Einklang mit allen geltenden rechtlichen Bestimmungen (DSGVO, Datenschutzgesetz 2018).
+    </p>
+
+    <h2 style="margin-bottom:1rem;">Welche Daten wir verarbeiten</h2>
+    <p style="margin-bottom:2rem; line-height:1.9; font-weight:300;">
+      Durch den Besuch dieser Website werden automatisch allgemeine Daten und Informationen erfasst: IP-Adresse, Datum und Uhrzeit des Aufrufs, Browsertyp und Version, Website (URL). Diese Daten werden für 2 Monate gespeichert und statistisch ausgewertet.
+    </p>
+
+    <h2 style="margin-bottom:1rem;">Verarbeitung Ihrer personenbezogenen Daten</h2>
+    <p style="margin-bottom:2rem; line-height:1.9; font-weight:300;">
+      Zur Erfüllung unserer Aufträge erheben und verarbeiten wir personenbezogene Daten wie Kontaktdaten (Namen, Adressen, Telefonnummern, E-Mail-Adressen), Buchdaten und Bankdaten.
+    </p>
+
+    <h2 style="margin-bottom:1rem;">Cookies</h2>
+    <p style="margin-bottom:2rem; line-height:1.9; font-weight:300;">
+      Unsere Internetseite verwendet Cookies. Diese kleinen Textdateien werden genutzt, um die Website nutzerfreundlicher zu gestalten.
+    </p>
+
+    <h2 style="margin-bottom:1rem;">Ihre Rechte</h2>
+    <p style="margin-bottom:1rem; line-height:1.9; font-weight:300;">
+      Nach Maßgabe des anwendbaren Datenschutzrechts haben Sie bzgl. Ihrer bei uns gespeicherten Daten das Recht auf: Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerruf.
+    </p>
+    <p style="margin-bottom:2rem; line-height:1.9; font-weight:300;">
+      Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich an <a href="mailto:office@immo-consulting.at" style="color:var(--slate);">office@immo-consulting.at</a> oder die Datenschutzbehörde beschweren.
+    </p>
+
+    <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">Zuletzt aktualisiert: 2026</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo.jpg" alt="" style="height:40px;margin-bottom:1rem;">
+        <p>Brugger & Brugger ImmoConsulting GmbH<br>Schulgartengasse 20/5, 2700 Wiener Neustadt</p>
+      </div>
+      <div class="footer__col"><h4>Navigation</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Rechtliches</h4><ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Kontakt</h4><ul>
+        <li><a href="tel:+43262236460">+43 2622 36460</a></li>
+        <li><a href="mailto:office@immo-consulting.at">office@immo-consulting.at</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Brugger & Brugger ImmoConsulting GmbH</span>
+      <div class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var burger = document.querySelector('.nav__burger');
+    var closeBtn = document.querySelector('.nav__close');
+    var backdrop = document.getElementById('navBackdrop');
+    if (!burger) return;
+    function closeMenu() { document.body.classList.remove('nav-open'); burger.classList.remove('toggle'); }
+    function openMenu() { document.body.classList.add('nav-open'); burger.classList.add('toggle'); }
+    burger.addEventListener('click', function() { if (document.body.classList.contains('nav-open')) closeMenu(); else openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    document.querySelectorAll('.nav__links a').forEach(function(link) { link.addEventListener('click', closeMenu); });
+  })();
+</script>
+
+</body>
+</html>

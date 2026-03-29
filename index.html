@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immo-Consulting — Hausverwaltung</title>
+  <meta name="description" content="Brugger & Brugger ImmoConsulting GmbH — Ihre Hausverwaltung in Wiener Neustadt. Sorgfältig, vertraulich, persönlich.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo">
+    <img src="img/logo.jpg" alt="Immo-Consulting Logo">
+  </a>
+  <ul class="nav__links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="leistungen.html">Leistungen</a></li>
+    <li><a href="ueber-uns.html">Über uns</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <button class="nav__burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav__backdrop" id="navBackdrop"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <div class="hero__tag">Hausverwaltung</div>
+      <h1>Sorgfältig.<br>Vertraulich.<br><span class="accent">Persönlich.</span></h1>
+      <p class="hero__sub">Ihre Brugger & Brugger ImmoConsulting GmbH — seit 2015 für Sie in Wiener Neustadt und ganz Österreich im Einsatz.</p>
+      <div class="hero__btns">
+        <a href="leistungen.html" class="btn btn--primary">Unsere Leistungen</a>
+        <a href="kontakt.html" class="btn btn--outline">Kontakt aufnehmen</a>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img src="img/hero.jpg" alt="Immo-Consulting">
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES TEASER -->
+<section class="section section--light">
+  <div class="container">
+    <div class="section__tag">Unsere Leistungen</div>
+    <h2 class="section__title">Rundum gut betreut</h2>
+    <p class="section__desc">Als Ihr WEG-Verwalter erfüllen wir unsere Aufgabe verbindlich, zuverlässig und unauffällig. Freundlich und zielorientiert — auf Augenhöhe.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-card__icon">⚏</div>
+        <h3>Ordentliche Hausverwaltung</h3>
+        <p>Vertretung, Optimierung, Vorschreibung, Kontoführung, Betriebskostenabrechnung, Wartung, Vorschau und Eigentümerversammlung.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon">✦</div>
+        <h3>Außerordentliche Verwaltung</h3>
+        <p>Sonderleistungen über die ordentliche Hausverwaltung hinaus — z.B. Aufzugserrrichtung, Umbauten oder Fahrradabstellplätze.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon">◈</div>
+        <h3>20+ Jahre Erfahrung</h3>
+        <p>Durch die Zusammenarbeit mit RE/MAX Exclusive und site.at Bau- und Projektmanagement bieten wir professionelle Betreuung in allen Bereichen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM TEASER -->
+<section class="section">
+  <div class="container">
+    <div class="split-section">
+      <div class="split-section__text">
+        <div class="section__tag">Über uns</div>
+        <h2 class="section__title">Ihre Ansprechpartner</h2>
+        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-weight: 300; line-height: 1.8;">
+          Claudia Brugger, Michael Brugger und Helmut Ringhofer — ein erfahrenes Team mit über 20 Jahren Immobilien-Know-how.
+        </p>
+        <p style="color: var(--text-light); margin-bottom: 2rem; font-weight: 300; line-height: 1.8;">
+          Wir stehen Ihnen als hilfsbereite Ansprechpartner zur Verfügung und helfen Ihnen schnell und unkompliziert.
+        </p>
+        <a href="ueber-uns.html" class="btn btn--outline btn--dark">Mehr über uns</a>
+      </div>
+      <div class="split-section__image">
+        <img src="img/building.jpg" alt="Brugger & Brugger ImmoConsulting">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPENING HOURS -->
+<section class="section section--light">
+  <div class="container">
+    <div class="hours-card">
+      <div class="hours-card__inner">
+        <div class="section__tag">Erreichbarkeit</div>
+        <h2 class="section__title">Wir sind gerne für Sie da</h2>
+        <div class="hours-list">
+          <div class="hours-row">
+            <span class="hours-day">Mo – Do</span>
+            <span class="hours-time">09:00 – 12:00 Uhr</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Di</span>
+            <span class="hours-time">13:00 – 16:00 Uhr</span>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <a href="kontakt.html" class="btn btn--primary">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="section__tag">Kontakt</div>
+    <h2>Haben Sie Fragen<br>zur Hausverwaltung?</h2>
+    <p>Wir freuen uns auf Ihre Nachricht.</p>
+    <a href="mailto:office@immo-consulting.at" class="btn btn--primary">E-Mail schreiben</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo.jpg" alt="Immo-Consulting" style="height:40px; margin-bottom:1rem;">
+        <p>Brugger & Brugger ImmoConsulting GmbH<br>Schulgartengasse 20/5, 2700 Wiener Neustadt</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+43262236460">+43 2622 36460</a></li>
+          <li><a href="mailto:office@immo-consulting.at">office@immo-consulting.at</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Brugger & Brugger ImmoConsulting GmbH</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var burger = document.querySelector('.nav__burger');
+    var closeBtn = document.querySelector('.nav__close');
+    var backdrop = document.getElementById('navBackdrop');
+    if (!burger) return;
+
+    function closeMenu() {
+      document.body.classList.remove('nav-open');
+      burger.classList.remove('toggle');
+    }
+    function openMenu() {
+      document.body.classList.add('nav-open');
+      burger.classList.add('toggle');
+    }
+
+    burger.addEventListener('click', function() {
+      if (document.body.classList.contains('nav-open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    document.querySelectorAll('.nav__links a').forEach(function(link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
+</script>
+
+</body>
+</html>

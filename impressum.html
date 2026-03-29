@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — Immo-Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo"><img src="img/logo.jpg" alt="Immo-Consulting"></a>
+  <ul class="nav__links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="leistungen.html">Leistungen</a></li>
+    <li><a href="ueber-uns.html">Über uns</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__backdrop" id="navBackdrop"></div>
+
+<header class="page-header">
+  <div class="container">
+    <div class="section__tag">Rechtliches</div>
+    <h1>Impressum</h1>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width: 720px;">
+    <h2 style="margin-bottom:2rem;">Brugger & Brugger ImmoConsulting GmbH</h2>
+
+    <div class="contact-info__item">
+      <h4>Adresse</h4>
+      <p>Schulgartengasse 20/5<br>2700 Wiener Neustadt<br>Österreich</p>
+    </div>
+
+    <div class="contact-info__item">
+      <h4>Telefon</h4>
+      <p>+43 2622 36460</p>
+    </div>
+
+    <div class="contact-info__item">
+      <h4>E-Mail</h4>
+      <p>office@immo-consulting.at</p>
+    </div>
+
+    <div class="contact-info__item">
+      <h4>Firmenbuchnummer</h4>
+      <p>FN 440114 b</p>
+    </div>
+
+    <div class="contact-info__item">
+      <h4>Gerichtsstand</h4>
+      <p>Landesgericht Wiener Neustadt</p>
+    </div>
+
+    <div class="contact-info__item">
+      <h4>UID</h4>
+      <p>ATU69922435</p>
+    </div>
+
+    <div class="contact-info__item">
+      <h4>Geschäftsführung</h4>
+      <p>Claudia Brugger & Michael Brugger</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo.jpg" alt="" style="height:40px;margin-bottom:1rem;">
+        <p>Brugger & Brugger ImmoConsulting GmbH<br>Schulgartengasse 20/5, 2700 Wiener Neustadt</p>
+      </div>
+      <div class="footer__col"><h4>Navigation</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Rechtliches</h4><ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Kontakt</h4><ul>
+        <li><a href="tel:+43262236460">+43 2622 36460</a></li>
+        <li><a href="mailto:office@immo-consulting.at">office@immo-consulting.at</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Brugger & Brugger ImmoConsulting GmbH</span>
+      <div class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var burger = document.querySelector('.nav__burger');
+    var closeBtn = document.querySelector('.nav__close');
+    var backdrop = document.getElementById('navBackdrop');
+    if (!burger) return;
+    function closeMenu() { document.body.classList.remove('nav-open'); burger.classList.remove('toggle'); }
+    function openMenu() { document.body.classList.add('nav-open'); burger.classList.add('toggle'); }
+    burger.addEventListener('click', function() { if (document.body.classList.contains('nav-open')) closeMenu(); else openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    document.querySelectorAll('.nav__links a').forEach(function(link) { link.addEventListener('click', closeMenu); });
+  })();
+</script>
+
+</body>
+</html>
