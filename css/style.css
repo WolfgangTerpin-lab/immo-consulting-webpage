@@ -236,7 +236,7 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
 }
 
-.hours-card .section__tag { color: rgba(255,255,255,0.6); }
+.hours-card .section__tag { color: rgba(255,255,255,0.7); }
 .hours-card .section__title { color: #f5f5f7; }
 
 .hours-list { margin-top: 2rem; }
@@ -271,7 +271,7 @@ img { display: block; max-width: 100%; }
   border-top: 1px solid var(--border);
 }
 
-.cta-section h2 { margin-bottom: 1rem; }
+.cta-section h2 { margin-bottom: 1rem; color: var(--text); }
 .cta-section p { margin-bottom: 2rem; }
 
 /* ---- FOOTER ---- */
