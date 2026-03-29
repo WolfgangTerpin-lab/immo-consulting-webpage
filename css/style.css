@@ -658,21 +658,65 @@ img { display: block; max-width: 100%; }
   .hero__btns { flex-direction: column; }
 }
 
-/* Ensure high contrast on light backgrounds */
+
+/* PAGE HEADER - readable text on light bg */
+.page-header h1,
+.page-header .section__title {
+  color: #1a1a2e !important;
+}
+
+.page-header p {
+  color: #4a4e6a !important;
+}
+
+/* Explicit heading colors on light backgrounds */
+h1, h2, h3, h4 {
+  color: #1a1a2e !important;
+}
+
+p {
+  color: #4a4e6a !important;
+}
+
+/* Ensure section__title and section__desc work for ALL heading levels */
+.section__title,
+.section__title h1,
+.section__title h2,
+.section__title h3,
+.section__desc,
+.section__desc p {
+  color: #1a1a2e !important;
+}
+
+/* On light sections */
+.section--light h1,
 .section--light h2,
 .section--light h3,
-.section--light .section__title {
+.section--light h4 {
   color: #1a1a2e !important;
 }
 
-.section--light .section__desc {
-  color: #3d3d5c !important;
+.section--light p {
+  color: #4a4e6a !important;
 }
 
-.section .section__title {
+/* On white sections */
+.section h1,
+.section h2,
+.section h3,
+.section h4 {
   color: #1a1a2e !important;
 }
 
-.section .section__desc {
+.section p {
+  color: #4a4e6a !important;
+}
+
+/* Service card text */
+.service-card h3 {
+  color: #1a1a2e !important;
+}
+
+.service-card p {
   color: #4a4e6a !important;
 }
